@@ -1,1 +1,14 @@
-<p>log works!</p>
+<div class="form">
+  <form class="example-form" [formGroup]="formL" (ngSubmit)="sendLogin($event)">
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Email</mat-label>
+      <input type="email" matInput formControlName="userEmail" placeholder="Ex. pat@example.com" />
+    </mat-form-field>
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Password</mat-label>
+      <input type="password" matInput formControlName="passwordUser" placeholder="" />
+    </mat-form-field>
+    <button mat-raised-button color="primary" type="submit">Log In</button>
+    <h3>Register<a [routerLink]="['/register']">(Click here)</a></h3>
+  </form>
+</div>

@@ -19,3 +19,11 @@
 td {
     padding-right: 8px;
 }
+
+h3{
+    text-align: center;
+}
+
+mat-hint{
+    color:red;
+}
